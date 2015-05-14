@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-Type" content="text/html;charset=utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <style>
+html, body, #hp_table, #hp_cellCenter {
+height: 100%;
+width: 100%;
+border-collapse: collapse;
+margin: 0;
+padding: 0;
+background-color: #01407e;
+border: 0;
+}
+#hp_container {
+min-width: 1115px;
+max-width: 1366px;
+width: 100%;
+min-height: 599px;
+max-height: 768px;
+height: 100%;
+position: relative;
+margin: auto;
+}
+.homepageLogo {
+    position: absolute;
+    top: 20%;
+    left: 36%;
+}
+.homepage-search {
+    position: absolute;
+    top: 20%;
+    left: 26%;
+    margin-top:98px;
+}
+#homepage-searchField {
+    height: 40px;
+    width: 542px;
+    padding: 0px 10px;
+    vertical-align: middle;
+    border: 1px solid #d9d9d9;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-size: 14px;
+    font-family: Simsun;
+    color: #000000;
+}
+#homepage-searchBtn {
+    display: inline-block;
+    height: 40px;
+    width: 74px;
+    vertical-align: middle;
+    background: url('homepage-searchBtn.png')no-repeat;
+}
+        </style>
+    </head>
+    <!--[if IE 8]><body class="IE8 pr"><![endif]-->
+	<!--[if !(IE 8)]><!--><body class="pr"><!--<![endif]-->
+        <table id="hp_table">
+            <tbody>
+                <tr>
+                    <td id="hp_cellCenter" class="hp_hd">
+                        <div id="hp_container">
+                            <div id="bgDiv" style="width: 1366px; height: 768px; top: 0px; left: -125.5px; background-image: url(hkBg.png); opacity: 1;">
+                            </div>
+                                <div class="homepageLogo">
+                                    <img src="homepage-logo.png"/>
+                                </div>
+                                <div class="homepage-search">
+                                    <input id="homepage-searchField" type="text" />
+                                    <a href="{% url 'search' %}" id="homepage-searchBtn" class="search"></a>
+                                </div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
