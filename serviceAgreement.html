@@ -26,32 +26,30 @@ margin: auto;
 .homepageLogo {
     position: absolute;
     top: 20%;
-    left: 36%;
+    left: 38%;
 }
 .homepage-search {
     position: absolute;
     top: 20%;
-    left: 26%;
-    margin-top:98px;
+    left: 38%;
+    margin-top:50px;
 }
 #homepage-searchField {
-    height: 40px;
-    width: 542px;
-    padding: 0px 10px;
-    vertical-align: middle;
-    border: 1px solid #d9d9d9;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    font-size: 14px;
-    font-family: Simsun;
-    color: #000000;
+height: 28px;
+width: 236px;
+padding: 0 10px;
+vertical-align: middle;
+border: 0 none;
+font-size: 14px;
+font-family: Simsun;
+color: #000000;
 }
 #homepage-searchBtn {
     display: inline-block;
-    height: 40px;
-    width: 74px;
+    height: 28px;
+    width: 60px;
     vertical-align: middle;
-    background: url('homepage-searchBtn.png')no-repeat;
+    background: url('searchBtn.png')no-repeat;
 }
         </style>
     </head>
@@ -65,11 +63,11 @@ margin: auto;
                             <div id="bgDiv" style="width: 1366px; height: 768px; top: 0px; left: -125.5px; background-image: url(hkBg.png); opacity: 1;">
                             </div>
                                 <div class="homepageLogo">
-                                    <img src="homepage-logo.png"/>
+                                    <img src="textImageLogo.png"/>
                                 </div>
                                 <div class="homepage-search">
                                     <input id="homepage-searchField" type="text" />
-                                    <a href="{% url 'search' %}" id="homepage-searchBtn" class="search"></a>
+                                    <a href="" id="homepage-searchBtn" class="search"></a>
                                 </div>
                         </div>
                     </td>
