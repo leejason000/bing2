@@ -3,6 +3,7 @@
     <head>
         <meta http-equiv="content-Type" content="text/html;charset=utf-8"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
             html, body, #hp_table, #hp_cellCenter {
                 height: 100%;
@@ -10,15 +11,11 @@
                 border-collapse: collapse;
                 margin: 0;
                 padding: 0;
-                background-color: #01407e;
+                background-image: url(hkBg.png);background-repeat: no-repeat;opacity: 1;
                 border: 0;
             }
             #hp_container {
-                min-width: 1115px;
-                max-width: 1366px;
                 width: 100%;
-                min-height: 599px;
-                max-height: 768px;
                 height: 100%;
                 position: relative;
                 margin: auto;
@@ -26,12 +23,10 @@
             .homepageLogo {
                 position: absolute;
                 top: 20%;
-                left: 38%;
             }
             .homepage-search {
                 position: absolute;
                 top: 20%;
-                left: 38%;
                 margin-top:50px;
             }
             #homepage-searchField {
@@ -88,8 +83,10 @@
             }
             #logoesContainer {
                 text-align:right;
+                width:100%;
                 height:50px;
-                position:relative;
+                position:absolute;
+                top:0;
                 background-color: #ffffff;
             }
             .foot {
@@ -99,21 +96,20 @@
                 text-align: center;
                 color: #b6b6b6;
                 font-size:12px;
+                background-color: #ffffff;
             }
         </style>
     </head>
     <!--[if IE 8]><body class="IE8 pr"><![endif]-->
 	<!--[if !(IE 8)]><!--><body class="pr"><!--<![endif]-->
+        <div id="logoesContainer">
+        <img id="logoKNET" src="logoKNET.png"/><a id="identityPC"></a><a id="identityPhone"></a>
+        </div>
         <table id="hp_table">
             <tbody>
                 <tr>
                     <td id="hp_cellCenter" class="hp_hd">
                         <div id="hp_container">
-                            <div id="logoesContainer">
-                                <img id="logoKNET" src="logoKNET.png"/><a id="identityPC"></a><a id="identityPhone"></a>
-                            </div>
-                            <div id="bgDiv" style="width: 1366px; height: 768px; top: 0px; left: -125.5px; background-image: url(hkBg.png); opacity: 1;">
-                            </div>
                             <div class="homepageLogo">
                                 <img src="textImageLogo.png"/>
                             </div>
